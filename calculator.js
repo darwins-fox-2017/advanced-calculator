@@ -3,6 +3,7 @@
 export class Calculator {
   constructor(value){
     this.nilai = value
+    this.PI = 3.14
   }
 
   penjumlahan(value){
@@ -35,12 +36,8 @@ export class Calculator {
     return this
   }
 
-  pi(){
-    return 3.14
-  }
-
   lingkaran(){
-    this.nilai = this.pi()*Math.pow(this.nilai,2)
+    this.nilai = this.PI*Math.pow(this.nilai,2)
     return this
   }
 
@@ -50,8 +47,8 @@ export class Calculator {
   }
 }
 
-let kalkulator = new Calculator(100)
-kalkulator.penjumlahan(100).pengurangan(100).perkalian(1).pembagian(10).perpangkatan(2).akar().lingkaran().hasil()
+// let kalkulator = new Calculator(100)
+// kalkulator.penjumlahan(100).pengurangan(100).perkalian(1).pembagian(10).perpangkatan(2).akar().lingkaran().hasil()
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters
