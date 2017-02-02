@@ -2,4 +2,5 @@
 
 import {Calculator} from "./calculator.js";
 
-// execute function on calculator.js in here
+let kalkulator = new Calculator(100)
+kalkulator.penjumlahan(100).pengurangan(100).perkalian(1).pembagian(10).perpangkatan(2).akar().lingkaran().hasil()

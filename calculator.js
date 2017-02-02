@@ -1,6 +1,6 @@
 "use strict";
 
-class Calculator {
+export class Calculator {
   constructor(value){
     this.nilai = value
   }
@@ -45,13 +45,13 @@ class Calculator {
   }
 
   hasil(){
-    return this.nilai
+    console.log(this.nilai);
+    return this
   }
 }
 
-var kalkulator = new Calculator(100)
-console.log("Hasilnya adalah : " + kalkulator.penjumlahan(100).pengurangan(100).perkalian(1).pembagian(10).perpangkatan(2).akar().lingkaran().hasil())
-
+let kalkulator = new Calculator(100)
+kalkulator.penjumlahan(100).pengurangan(100).perkalian(1).pembagian(10).perpangkatan(2).akar().lingkaran().hasil()
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters
