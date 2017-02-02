@@ -1,7 +1,7 @@
 "use strict";
 
 export class Calculator {
-  constructot(input){
+  constructor(input){
     this.input = input
   }
 
@@ -15,6 +15,11 @@ export class Calculator {
     return this
   }
 
+  calKali(val){
+    this.input *= val
+    return this
+  }
+
   calBagi(val){
     this.input  /= val
     return this
@@ -25,15 +30,19 @@ export class Calculator {
     return this
   }
 
-  calKonstanta(val){
-    this.input = Math.pow(this.input, 2) * 3.14
+  calAkar(){
+    this.input = Math.sqrt(this.input, 0.5)
+    return this
+  }
+
+  calLingkarang(){
+    this.input = Math.pow(this.input, 2) * 22/7
     return this
   }
 
   calResult(){
-    return `Result : ${this.input}`
+    console.log(`Result : ${this.input}`)
   }
-
 }
 
 /** note : you can use several features from ecmascript, such as:
