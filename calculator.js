@@ -30,10 +30,10 @@ export class Calculator {
     return this
   }
 
-  konstanta(input){
+  konstanta(){
     //Luas = π r2
     let phi = 3.14
-    let r = Math.pow(input, 2)
+    let r = Math.pow(this.angka, 2)
     this.angka = phi * r
     return this
   }
