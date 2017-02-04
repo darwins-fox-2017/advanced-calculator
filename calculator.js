@@ -36,8 +36,7 @@ export class Calculator {
   }
 
   circle(){
-    const PI = 3.14
-    this.input = PI * Math.pow(this.input, 2)
+    this.input = Math.PI * Math.pow(this.input, 2)
     return this
   }
 
